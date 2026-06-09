@@ -1,0 +1,54 @@
+package com.oops;
+class Node{
+	Node prev;
+	Node next;
+	String data;
+	
+	
+		Node(String data){
+			this.prev = null;
+			this.next = null;
+			this.data = data;
+		}
+}
+
+public class DlinkedList {
+	static Node head;
+	static Node tail;
+
+	
+	static void printForwoard(){
+		Node temp = head;
+		while(temp != null) {
+			System.out.print(temp.data);
+			if(temp.next != null) {
+				System.out.print("<-->");
+			}
+			temp = temp.next;
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+		Node a = new Node("A");
+		Node b = new Node("B");
+		Node c = new Node("C");
+		Node d = new Node("D");
+		a.prev = null;
+		a.next = b;
+		b.prev = a;
+		b.next = c;
+		c.prev = b;
+		c.next = d;
+		d.prev = c;
+		d.next = null;
+		
+		 head = a;
+	     tail = d;
+		
+		
+		printForwoard();
+		
+	}
+
+}

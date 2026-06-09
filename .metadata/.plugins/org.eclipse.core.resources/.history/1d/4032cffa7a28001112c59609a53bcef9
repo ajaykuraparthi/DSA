@@ -1,0 +1,54 @@
+package com.oops;
+class DNode{
+	DNode prev;
+	DNode next;
+	String data;
+	
+	
+		DNode(String data){
+			this.prev = null;
+			this.next = null;
+			this.data = data;
+		}
+}
+
+public class DlinkedList {
+	static DNode head;
+	static DNode tail;
+
+	
+	static void printForwoard(){
+		DNode temp = head;
+		while(temp != null) {
+			System.out.print(temp.data);
+			if(temp.next != null) {
+				System.out.print(" <--> ");
+			}
+			temp = temp.next;
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+		DNode a = new DNode("A");
+		DNode b = new DNode("B");
+		DNode c = new DNode("C");
+		DNode d = new DNode("D");
+		a.prev = null;
+		a.next = b;
+		b.prev = a;
+		b.next = c;
+		c.prev = b;
+		c.next = d;
+		d.prev = c;
+		d.next = null;
+		
+		 head = a;
+	     tail = d;
+		
+		
+		printForwoard();
+		
+	}
+
+}

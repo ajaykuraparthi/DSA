@@ -1,0 +1,72 @@
+package com.oops;
+
+class ChaiShop{
+	String branchName;
+	int cupsSold;
+	int pricePerCup;
+	
+	// constructer
+	
+		public ChaiShop(String branchName,int cupsSold,int pricePerCup){  // bn vunte parameters lo null vastadi ade paina global lo vunna value vastedi ade null
+													// or par lo branchName vunte kinda object lo edaite pass chesintamo adi contsturucter parameter lo store avuthundi
+			
+			
+//			System.out.println("Constructer here machha");	
+//			System.out.println(bn +" "+cs+" "+ppc);
+//			
+//			branchName = bn;
+//			cupsSold = cs;
+//			pricePerCup = ppc;
+			
+			this.branchName = branchName;
+			this.cupsSold = cupsSold;
+			this.pricePerCup = pricePerCup;
+			
+//			System.out.println(branchName);
+//			System.out.println(this.branchName);
+		}
+	
+//	public  void display() {
+//		System.out.println(branchName);
+////		System.out.println(cupsSold);
+////		System.out.println(pricePerCup);
+//		
+//		
+//	}
+	public static void classFun(String s) {
+		System.out.println("class lopala  "+s);
+	}
+	
+}
+public class OopEx {
+	
+//	public static void fun() {
+//		System.out.println("machha i am in function");
+//	}
+	
+	public static void main(String args[]) {
+		
+		
+		
+		ChaiShop branch1 = new ChaiShop("Adda",5,9);
+		
+		System.out.println(branch1.branchName +" "+ branch1.cupsSold+" "+branch1.pricePerCup);
+		
+		//branch1.display();
+		
+		
+//		branch1.branchName = "Bhahubali Adda";
+//		branch1.cupsSold = 5;
+//		branch1.classFun("boom");
+//		
+//		System.out.println(branch1.branchName);
+//		System.out.println(branch1.cupsSold);
+//		
+//		ChaiShop branch2 = new ChaiShop();
+//		branch2.branchName = "jalsaKottu";
+//		branch2.cupsSold = 10;
+//		System.out.println(branch2.branchName);
+//		System.out.println(branch2.cupsSold);
+		 
+	}
+}

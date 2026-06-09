@@ -1,0 +1,21 @@
+package com.oops;
+
+ class owner{
+	String ownerName = "Aj";
+	int age = 20;
+	int num = 123;
+	
+}
+class chaishop extends owner{
+	 
+	public void display() {
+		System.out.println("hi machha");
+		}
+ }
+
+public class Inheritance {
+	public static void main(String args[]) {
+		
+	}
+
+}
