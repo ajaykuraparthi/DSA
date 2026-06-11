@@ -1,0 +1,28 @@
+package stack;
+import java.util.*;
+public class implementation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Stack<Integer> st = new Stack<>();
+		
+		st.push(1);
+		st.push(2);
+		st.push(3);
+		
+		System.out.println(st);
+		
+//		st.pop();
+		
+		System.out.println(st);
+		
+		// iterate stack 
+		
+		for(int i:st) {
+			System.out.println(i);
+		}
+	}
+
+}

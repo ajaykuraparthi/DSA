@@ -1,0 +1,80 @@
+package com.oops;
+
+import java.util.Arrays;
+
+public class BasicClass {
+	public static void main(String args[]) {
+		
+		// store 5 roll nos
+		
+		int numbers[] = new int[5];
+		
+		// store 5 names
+		
+		String names[] = new String[5];
+		
+		// data of 5 students : {roll no , name , marks}
+		
+		int rno[] = new int[5];
+		String name[] = new String[5];
+		float marks[] = new float[5];
+		
+		
+		 
+		Student std[] = new Student[5];
+		
+		// just declaring
+//		
+//		Student ajay;
+		
+		Student ajay  = new Student();
+		
+//		ajay.name = "Aj";
+//		ajay.rno = 6068;
+//		ajay.marks = 88.69f;
+//		
+		System.out.println(ajay.name);
+		System.out.println(ajay.marks);	
+		System.out.println(ajay.rno);
+			 
+		
+	}  
+	 
+}
+//now i am gonna create a class
+	// for every single student
+class Student{
+	int rno;
+	String name;
+	float marks;
+	
+	// we need a way to add the values of the above properties object
+	// by object
+	
+	// we need one word to access every object
+	
+	Student(){
+		this.name = "Aj";
+		this.rno = 6068;
+		this.marks = 88.69f;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
