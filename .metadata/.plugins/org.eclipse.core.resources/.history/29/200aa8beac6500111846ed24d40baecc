@@ -18,15 +18,14 @@ public class basic {
 		q.add("ajay");
 		q.add("Aj");
 //		q.poll();    // tc -- > O(1)
-        System.out.println(q.poll());
+//        System.out.println(q);
 	
 		// Iterating of the queue
-//		
-//		while(!q.isEmpty()) {
-//			System.out.println(q.poll());
-//		}
-//		System.out.println(q);
-//	}
+		
+		while(!q.isEmpty()) {
+			System.out.println(q.poll());
+		}
+		System.out.println(q);
+	}
 
-}
 }

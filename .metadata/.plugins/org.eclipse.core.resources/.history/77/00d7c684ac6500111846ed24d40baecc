@@ -42,7 +42,7 @@ public class implementation {
 		while(!st.isEmpty()) {
 			sb.append(st.pop());
 		}
-		  
+		
 		System.out.println(sb.toString());
 		
 		
