@@ -52,31 +52,4 @@ class Solution {
 
      }
 
-} 
- // optimal approach 
-
-//class Solution {
-//    public boolean isValid(String s) {
-//        Stack<Character> st = new Stack<>();
-//
-//        for (char ch : s.toCharArray()) {
-//
-//            if (ch == '(') st.push(')');
-//            else if (ch == '[') st.push(']');
-//            else if (ch == '{') st.push('}');
-//            else {
-//                if (st.isEmpty() || st.pop() != ch) {
-//                    return false;
-//                }
-//            }
-//        }
-//
-//        return st.isEmpty();
-//    }
-//}
-
-
-// for tc it will be the O(n) 
-// for sc  it will be the O(n)
-
-
+} here is my final code can we optimize space 
